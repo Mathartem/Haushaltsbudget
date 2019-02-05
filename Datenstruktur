@@ -1,0 +1,56 @@
+class Datenstruktur {
+
+      double Einnahme_Hoehe;
+      
+      double Einnahme_Hoehe_Default;
+      
+      String Einnahme_Art;
+      
+      String Einnahme_Art_Default;
+      
+      Date Einnahme_Datum;
+      
+      String Einnahme_Waehrung;
+      
+      String Einnahme_Waehrung_Default;
+      
+      
+      
+      double Ausgabe_Hoehe;
+      
+      String Ausgabe_Hoehe_Default;
+      
+      String Ausgabe_Art;
+      
+      String Ausgabe_Art_Default;
+      
+      Date Ausgabe_Datum;
+      
+      String Ausgabe_Waehrung;
+      
+      String Ausgabe_Waehrung_Default;
+            
+            
+             void Ueberpruefung_Numerischer_Werte (double Wert){
+      
+                     if (Wert <= 0){System.out.println("Sie können nur positive Geldbeträge erfassen");}
+                     
+                     else {String Wert_als_String = Double.toString(Wert);
+                           Wert_als_String = Wert_als_String.substring(Wert_als_Str.indexOf(",") + 1);
+                           int Nachkommastellen_Anzahl = Wert_als_String.length();
+    
+                           if (Nachkommastellen_Anzahl > 2) {System.out.println("Ein Geldbetrag kann hoechstens zwei Nachkommastellen habem");}
+                          }  
+      
+              }
+              
+              
+                            void Ueberpruefung_Datum_Werte(Date Wert){
+                             
+                                 
+                             
+                             }
+              
+              
+
+}
