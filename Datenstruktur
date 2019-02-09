@@ -39,7 +39,7 @@ class Datenstruktur {
                            Wert_als_String = Wert_als_String.substring(Wert_als_Str.indexOf(",") + 1);
                            int Nachkommastellen_Anzahl = Wert_als_String.length();
     
-                           if (Nachkommastellen_Anzahl > 2) {System.out.println("Ein Geldbetrag kann hoechstens zwei Nachkommastellen habem");}
+                           if (Nachkommastellen_Anzahl > 2) {System.out.println("Ein Geldbetrag kann hoechstens zwei Nachkommastellen haben");}
                           }  
       
               }
