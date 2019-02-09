@@ -31,7 +31,8 @@ class Datenstruktur {
       String Ausgabe_Waehrung_Default;
             
             
-             void Ueberpruefung_Numerischer_Werte (double Wert){
+             void Ueberpruefung_Numerischer_Werte (double Wert)
+             {
       
                      if (Wert <= 0){System.out.println("Sie können nur positive Geldbeträge erfassen");}
                      
@@ -45,11 +46,9 @@ class Datenstruktur {
               }
               
               
-                            void Ueberpruefung_Datum_Werte(Date Wert){
-                             
-                                 
-                             
-                             }
+                    void Ueberpruefung_Datum_Werte(Date Wert)
+                    { if (Wert.after(Today)) { System.out.println("Die noch nicht erfolgten Zahlungsvorgaenge koennen nicht erfasst werden"); }               
+                    }
               
               
 
