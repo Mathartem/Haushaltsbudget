@@ -19,7 +19,7 @@ public class Income {
     void Controll_Of_Numeric_Value (double Value)
     {
 
-            if (Value <= 0){System.out.println("Sie können nur positive Geldbeträge erfassen");}
+            if (Value <= 0){System.out.println("Only positive amounts can be entered");}
             
             else if (Value-(int)Value != 0)  
                  {
@@ -28,7 +28,7 @@ public class Income {
                   int Number_Of_Decimal_Places = Value_as_String.length();
 
                   if (Number_Of_Decimal_Places > 2) 
-                     {System.out.println("Ein Geldbetrag kann hoechstens zwei Nachkommastellen haben");}
+                     {System.out.println("An amount can have at the most two decimal places");}
                  }  
 
      }
