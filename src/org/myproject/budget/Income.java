@@ -4,17 +4,17 @@ import java.util.Date;
 
 public class Income {
 
-    double Amount;
+    double amount;
     
    
     
-    String Income_Type;
+    String type;
     
    
     
-    Date Income_Date;
+    Date date;
    
-    String Comment;
+    String comment;
     
     void Controll_Of_Numeric_Value (double Value)
     {

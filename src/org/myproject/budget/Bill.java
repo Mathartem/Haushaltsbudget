@@ -4,18 +4,18 @@ package org.myproject.budget;
 
 	public class Bill {
 
-	    double Amount;
+	    double amount;
 	    
 	    
 	    
-	    String Type;
+	    String type;
 	    
 	    
 	    
-	    Date Date;
+	    Date date;
 	    
 	    
-	    String Comment;
+	    String comment;
 	    
 	    void Controll_Of_Numeric_Value (double Value)
 	    {
