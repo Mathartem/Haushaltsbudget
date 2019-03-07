@@ -10,15 +10,63 @@ package org.myproject.budget;
 
 	public class Bill {
 		
-	    BigDecimal amount;
+	   private BigDecimal amount;
 	   
 	    enum Type {HomeRent, HomeAdditionalCosts, Food, Medical, Entertainment, Utilities, Transport, DebtPayment};
 	    
-	    Type type;
+	   private Type type;
 	    
-	    GregorianCalendar date;
+	   private GregorianCalendar date;
 	       
-	    String comment;
+	   private String comment;
+	 
+	    public BigDecimal getAmount() 
+	    {	
+	    	return amount;	
+	    }
 	    
+	    public void setAmount(double amount)
+	    {
+	    	this.amount = new BigDecimal(Double.toString(amount));
+	    }
+	    
+	    public Type getType()
+	    {
+	    	return type;
+	    }
+	    
+	    public void setType(Type type)
+	    {
+	    	this.type = type;
+	    }
+	    
+	    public Date getDate()
+	    {
+	    	return date.getTime();
+	    }
+	    
+	    public void setDate(int year, int month, int day)
+	    {
+	    	this.date = new GregorianCalendar(year, month, day);
+	    }
+	    
+	    public String getComment() 
+	    {
+	    	return comment;
+	    }
+	    
+	    public void setComment(String comment)
+	    {
+	    	this.comment = comment;
+	    }
+	    
+	    public Bill(double amount, Type type, int year, int month, int day, String comment)
+	    {
+	    	setAmount(amount);
+	    	setType(type);
+	    	setDate(year, month, day);
+	    	setComment(comment);
+	    }
 
-	}
+	
+}

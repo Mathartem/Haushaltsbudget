@@ -6,25 +6,69 @@ import java.lang.Enum;
 
 import java.math.BigDecimal;
 
-import java.util.Date;
-
-import java.lang.Enum;
-
-import java.math.BigDecimal;
-
 import java.util.GregorianCalendar;
+
+import org.myproject.budget.Bill.Type;
 
 public class Income {
 	
-    BigDecimal amount;
+    private BigDecimal amount;
    
     enum Type {Salary, Bonus, Leasing, StockExchange, Dividents, Loan};
     
-    Type type;
+    private Type type;
     
-    GregorianCalendar date;
+    private GregorianCalendar date;
        
-    String comment;
+    private String comment;
     
+    public BigDecimal getAmount() 
+    {	
+    	return amount;	
+    }
+    
+    public void setAmount(double amount)
+    {
+    	this.amount = new BigDecimal(Double.toString(amount));
+    }
+    
+    public Type getType()
+    {
+    	return type;
+    }
+    
+    public void setType(Type type)
+    {
+    	this.type = type;
+    }
+    
+    public Date getDate()
+    {
+    	return date.getTime();
+    }
+    
+    public void setDate(int year, int month, int day)
+    {
+    	this.date = new GregorianCalendar(year, month, day);
+    }
+    
+    public String getComment() 
+    {
+    	return comment;
+    }
+    
+    public void setComment(String comment)
+    {
+    	this.comment = comment;
+    }
+    
+    public Income(double amount, Type type, int year, int month, int day, String comment)
+    {
+    	setAmount(amount);
+    	setType(type);
+    	setDate(year, month, day);
+    	setComment(comment);
+    }
+
 
 }
