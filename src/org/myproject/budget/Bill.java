@@ -16,12 +16,11 @@ package org.myproject.budget;
 	    
 	   private Type type;
 	    
-	   private GregorianCalendar date;
-	       
+	   private GregorianCalendar date;	       
 
 	   private String comment;
 	   
-	   //get und set Methods 
+	   // get und set Methods 
 	 
 	    public BigDecimal getAmount() 
 	    {	
@@ -63,7 +62,7 @@ package org.myproject.budget;
 	    	this.comment = comment;
 	    }
 	    
-	    //Definition of Constructor
+	    // Definition of Constructor
 	    
 	    public Bill(double amount, Type type, int year, int month, int day, String comment)
 	    {

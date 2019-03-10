@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 
 public class Income {
 	
-	//Declaration of Variables
+	// Declaration of Variables
 	
     private BigDecimal amount;
    
@@ -62,7 +62,7 @@ public class Income {
     	this.comment = comment;
     }
     
-    //Definition of Constructor
+    // Definition of Constructor
     
     public Income(double amount, Type type, int year, int month, int day, String comment)
     {
