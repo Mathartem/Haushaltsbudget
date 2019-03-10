@@ -10,7 +10,7 @@ package org.myproject.budget;
 
 	public class Bill {
 		
-		//Declaration of Variables
+		// Declaration of Variables
 		
 	   private BigDecimal amount;
 	   

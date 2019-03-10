@@ -12,7 +12,7 @@ import org.myproject.budget.Bill.Type;
 
 public class Income {
 	
-	// Declaration of Variables
+	//Declaration of Variables
 	
     private BigDecimal amount;
    
