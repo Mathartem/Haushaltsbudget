@@ -12,6 +12,8 @@ import org.myproject.budget.Bill.Type;
 
 public class Income {
 	
+	// Declaration of Variables
+	
     private BigDecimal amount;
    
     enum Type {Salary, Bonus, Leasing, StockExchange, Dividents, Loan};
@@ -21,6 +23,8 @@ public class Income {
     private GregorianCalendar date;
        
     private String comment;
+    
+    // set und get methods
     
     public BigDecimal getAmount() 
     {	
@@ -61,6 +65,8 @@ public class Income {
     {
     	this.comment = comment;
     }
+    
+    //Definition of Constructor
     
     public Income(double amount, Type type, int year, int month, int day, String comment)
     {

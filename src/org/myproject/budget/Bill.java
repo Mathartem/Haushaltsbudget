@@ -10,6 +10,8 @@ package org.myproject.budget;
 
 	public class Bill {
 		
+		//Declaration of Variables
+		
 	   private BigDecimal amount;
 	   
 	    enum Type {HomeRent, HomeAdditionalCosts, Food, Medical, Entertainment, Utilities, Transport, DebtPayment};
@@ -19,6 +21,8 @@ package org.myproject.budget;
 	   private GregorianCalendar date;
 	       
 	   private String comment;
+	   
+	   //get und set Methods 
 	 
 	    public BigDecimal getAmount() 
 	    {	
@@ -59,6 +63,8 @@ package org.myproject.budget;
 	    {
 	    	this.comment = comment;
 	    }
+	    
+	    //Definition of Constructor
 	    
 	    public Bill(double amount, Type type, int year, int month, int day, String comment)
 	    {
