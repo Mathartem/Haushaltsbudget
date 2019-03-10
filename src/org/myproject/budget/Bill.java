@@ -1,8 +1,6 @@
 package org.myproject.budget;
 	
 	import java.util.Date;
-
-	import java.lang.Enum;
 	
 	import java.math.BigDecimal;
 	
@@ -10,55 +8,71 @@ package org.myproject.budget;
 
 	public class Bill {
 		
-	    BigDecimal amount;
+		// Declaration of Variables
+		
+	   private BigDecimal amount;
 	   
 	    enum Type {HomeRent, HomeAdditionalCosts, Food, Medical, Entertainment, Utilities, Transport, DebtPayment};
 	    
-	    Type type;
+	   private Type type;
 	    
-	    GregorianCalendar date;
+	   private GregorianCalendar date;
 	       
-	    String comment;
+
+	   private String comment;
+	   
+	   //get und set Methods 
 	 
-	    BigDecimal getAmount() 
+	    public BigDecimal getAmount() 
 	    {	
 	    	return amount;	
 	    }
 	    
-	    void setAmount(double amount)
+	    public void setAmount(double amount)
 	    {
 	    	this.amount = new BigDecimal(Double.toString(amount));
 	    }
 	    
-	    Type getType()
+	    public Type getType()
 	    {
 	    	return type;
 	    }
 	    
-	    void setType(Type type)
+	    public void setType(Type type)
 	    {
 	    	this.type = type;
 	    }
 	    
-	    GregorianCalendar getDate()
+	    public Date getDate()
 	    {
-	    	return date;
+	    	return date.getTime();
 	    }
 	    
-	    void setDate(int year, int month, int day)
+	    public void setDate(int year, int month, int day)
 	    {
 	    	this.date = new GregorianCalendar(year, month, day);
 	    }
 	    
-	    String getComment() 
+	    public String getComment() 
 	    {
 	    	return comment;
 	    }
 	    
-	    void setComment(String comment)
+	    public void setComment(String comment)
 	    {
 	    	this.comment = comment;
 	    }
+	    
+	    //Definition of Constructor
+	    
+	    public Bill(double amount, Type type, int year, int month, int day, String comment)
+	    {
+	    	setAmount(amount);
+	    	setType(type);
+	    	setDate(year, month, day);
+	    	setComment(comment);
+	    }
+
 
 	
 }
