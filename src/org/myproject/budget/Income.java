@@ -20,6 +20,16 @@ public class Income {
        
     private String comment;
     
+    // Definition of Constructor
+    
+    public Income(double amount, Type type, int year, int month, int day, String comment)
+    {
+    	setAmount(amount);
+    	setType(type);
+    	setDate(year, month, day);
+    	setComment(comment);
+    }
+    
     // set und get methods
     
     public BigDecimal getAmount() 
@@ -59,18 +69,11 @@ public class Income {
     
     public void setComment(String comment)
     {
+    
     	this.comment = comment;
     }
     
-    // Definition of Constructor
-    
-    public Income(double amount, Type type, int year, int month, int day, String comment)
-    {
-    	setAmount(amount);
-    	setType(type);
-    	setDate(year, month, day);
-    	setComment(comment);
-    }
+
 
 
 }

@@ -20,6 +20,16 @@ package org.myproject.budget;
 
 	   private String comment;
 	   
+	    // Definition of Constructor
+	    
+	    public Bill(double amount, Type type, int year, int month, int day, String comment)
+	    {
+	    	setAmount(amount);
+	    	setType(type);
+	    	setDate(year, month, day);
+	    	setComment(comment);
+	    }
+	   
 	   // get und set Methods 
 	 
 	    public BigDecimal getAmount() 
@@ -62,15 +72,7 @@ package org.myproject.budget;
 	    	this.comment = comment;
 	    }
 	    
-	    // Definition of Constructor
-	    
-	    public Bill(double amount, Type type, int year, int month, int day, String comment)
-	    {
-	    	setAmount(amount);
-	    	setType(type);
-	    	setDate(year, month, day);
-	    	setComment(comment);
-	    }
+
 
 
 	
