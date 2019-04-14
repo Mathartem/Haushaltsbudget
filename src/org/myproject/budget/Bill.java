@@ -1,4 +1,4 @@
-package org.myproject.budget;
+package org.myproject.budget;                     
 
 import java.math.BigDecimal;
 import java.util.Date;
